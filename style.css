@@ -1,0 +1,92 @@
+p {
+    height: 200px;
+    width: 500px;
+    margin: 100px auto;
+    position: relative;
+  }
+  
+  img {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    offset-path: path("m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30");
+    box-shadow: 1px 1px 3px #0008;
+    transition: transform 0.4s ease-out,
+      offset-path 0.4s cubic-bezier(0.77, -1.17, 0.75, 0.84), box-shadow 0.3s,
+      z-index 0.3s;
+    z-index: 0;
+  }
+  
+  img:hover {
+    transform: scale(6);
+    box-shadow: 3px 4px 10px #0006;
+    z-index: 999;
+  }
+  
+ 
+  img:nth-last-child(3):first-child {
+    offset-distance: 18%;
+  }
+  img:nth-last-child(2):nth-child(2) {
+    offset-distance: 49%;
+  }
+  img:last-child:nth-child(3) {
+    offset-distance: 81%;
+  }
+  
+
+  img:nth-last-child(4):first-child {
+    offset-distance: 10%;
+  }
+  img:nth-last-child(3):nth-child(2) {
+    offset-distance: 35%;
+  }
+  img:nth-last-child(2):nth-child(3) {
+    offset-distance: 65%;
+  }
+  img:last-child:nth-child(4) {
+    offset-distance: 90%;
+  }
+  
+ 
+  img:nth-last-child(5):first-child {
+    offset-distance: 0%;
+  }
+  img:nth-last-child(4):nth-child(2) {
+    offset-distance: 25%;
+  }
+  img:nth-last-child(3):nth-child(3) {
+    offset-distance: 51%;
+  }
+  img:nth-last-child(2):nth-child(4) {
+    offset-distance: 75%;
+  }
+  img:last-child:nth-child(5) {
+    offset-distance: 100%;
+  }
+  body{
+    background-image: url("clouds-4457962_1280.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  h1{
+    font-family: 'Rocher';
+    text-align: center;
+    align-items: center;
+    font-size: 125px;
+  }
+  a{
+    font-family: 'Rocher';
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  
